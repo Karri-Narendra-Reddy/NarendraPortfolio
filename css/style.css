@@ -788,4 +788,31 @@ h3.my-profession{
         max-width: 100%;
     }
 
+    .about .about-content .about-text p,
+    .about .about-content .personal-info .info-item p{
+        text-align: justify;
+    }
+
 }
+
+@media (max-width:490px){
+    
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin-left: -15px;
+        margin-right: -15px;
+        position: relative;
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about .about-content .about-text p,
+    .about .about-content .personal-info .info-item p{
+        text-align: justify;
+    }
+
+}
+
