@@ -843,6 +843,20 @@ h3.my-profession{
 }
 
 @media (max-width:490px){
+    /* if image is needed */
+    .home .home-img{
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .home-img::after{
+        display: none;
+    }
+    
+    .home-img::before{
+        display: none;
+    }
+    /* remove till here if not needed image */
     
     .row{
         display: flex;
