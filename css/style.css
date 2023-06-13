@@ -742,6 +742,53 @@ h3.my-profession{
 
 }
 
+/* images */
+.images{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    transition: transform .2s;
+}
+
+/* tooltip */
+
+.tooltip {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 79%;
+    left: 37%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 @media (max-width:1199px) {
     .aside{
         left: -270px;;
