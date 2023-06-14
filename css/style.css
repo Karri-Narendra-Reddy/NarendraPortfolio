@@ -823,6 +823,24 @@ h3.my-profession{
 }
 
 @media (max-width:767px){
+
+    /* if image is needed */
+    .home .home-img{
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+    }
+
+    .home-img::after{
+        display: none;
+    }
+    
+    .home-img::before{
+        display: none;
+    }
+    /* remove till here if not needed image */
+    
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -845,8 +863,10 @@ h3.my-profession{
 @media (max-width:490px){
     /* if image is needed */
     .home .home-img{
-        display: inline-flex;
-        align-items: center;
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+        
     }
 
     .home-img::after{
